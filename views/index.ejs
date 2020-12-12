@@ -1,0 +1,634 @@
+<DOCTYPE html!>
+  <html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/33c24d814a.js" crossorigin="anonymous"></script>
+    <title>
+    </title>
+  <style>
+    body {
+    
+      background-color: white;
+      background-size: 700px;
+      height: 2600px;
+      
+    }
+  
+  
+    
+    .mydiv{
+      
+      height: 100px;
+      background-color:#5BE156;
+      position: relative;
+    }
+  
+    
+    .sec {
+  
+      background-color: yellow;
+      width: 101%;
+      height: 80%;
+      position: absolute;
+      margin-left: -20px;
+      margin-right: 10px;
+      margin-top: -20px;
+      border-color: 3px solid orange;
+      border-radius: 0% 0% 50% 50%/ 0% 0% 87% 98%;
+    
+    }
+    
+    nav {
+  
+        background-color: yellow;
+        width: 101%;
+        height: 120px;
+        font-family: monospace, san-serif;
+        font-weight: bold;
+        vertical-align: middle;
+        position: fixed;
+        z-index: 100;
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+    
+    nav ul {
+  
+        list-style-type: none;
+        padding: 0;
+        vertical-align: middle;
+  
+    }
+  
+    nav li {
+  
+        
+        vertical-align: middle;
+    
+    }
+    
+    nav li a {
+  
+        color: white;
+        text-decoration: none;
+        vertical-align: center;
+  
+    }
+  
+    
+    .im {
+  
+      border-radius: 45% 45% 45% 45%;
+    
+    }
+  
+    .search-box {
+      
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        transform: translate(-50%,-60%);
+    }
+    
+    .input2 {
+  
+        border: 3px solid green;
+        height: 48px; 
+        width: 350px;
+        border-radius: 50px;
+        padding: 0px 12px;
+        font-size: 20px;
+        position: absolute;
+        position: fixed;
+        z-index: -100;
+    }
+  
+    
+    .input8 {
+  
+        border: 2px solid black;
+        height: 45px; 
+        width: 560px;
+        border-radius: 10px;
+        left: 120px;
+        font-family: fontawesome;
+        font-size: 20px;
+        position: absolute;
+        z-index: 100;
+    }
+  
+    .input3 {
+  
+      
+        height: 26px; 
+        width: 160px;
+        top: 366px;
+        font-size: 15px;
+        font-family: fontawesome;
+        left: 525px;
+        padding: 0px 12px;
+        position: absolute;
+    
+    }
+  
+    .input10 {
+  
+        background-color: yellow;
+        display: block;
+        height: 600px;  
+        width: 360px;
+        top: 1420px;
+        left: 5px;
+        font-family: fontawesome;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 0px 12px;
+        position: absolute;
+        z-index: -100;
+    }
+    
+    .input4 {
+  
+        background-color: yellow;
+        display: block;
+        height: 600px;  
+        width: 360px;
+        top: 1420px;
+        left: -420px;
+        font-family: fontawesome;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 0px 12px;
+        position: absolute;
+        z-index: -100;
+    }
+    
+    .input12 {
+  
+        background-color: yellow;
+        display: block;
+        height: 600px;  
+        width: 360px;
+        top: 1420px;
+        left: 430px;
+        font-family: fontawesome;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 0px 12px;
+        position: absolute;
+        z-index: -100;
+    }
+    
+    .input13 {
+  
+        background-color: black;
+        display: block;
+        height: 50px; 
+        width: 360px;
+        top: 1970px;
+        font-family: fontawesome;
+        font-size: 20px;
+        left: 430px;
+        border-radius: 0px 0px 15px 15px;
+        padding: 0px 12px;
+        position: absolute;
+        z-index: -100;
+    }
+    
+    .input6 {
+  
+        background-color: black;
+        display: block;
+        height: 50px; 
+        width: 360px;
+        top: 1970px;
+        font-family: fontawesome;
+        font-size: 20px;
+        left: -420px;
+        border-radius: 0px 0px 15px 15px;
+        padding: 0px 12px;
+        position: absolute;
+        z-index: -100;
+    }
+      
+    .input11 {
+  
+        background-color: black;
+        display: block;
+        height: 50px; 
+        width: 360px;
+        top: 1970px;
+        font-family: fontawesome;
+        font-size: 20px;
+        left: 5px;
+        border-radius: 0px 0px 15px 15px;
+        padding: 0px 12px;
+        position: absolute;
+        z-index: -100;
+    }
+    
+    
+    .input7 {
+  
+        background-color: yellow;
+        display: block;
+        height: 750px;  
+        width: 800px;
+        top: 180px;
+        left: -220px;
+        font-size: 20px;
+        font-family: fontawesome;
+        border-radius: 15px 15px 15px 15px;
+        padding: 0px 12px;
+        position: absolute;
+        z-index: -100;
+    }
+    
+    .input1 {
+  
+        height: 52px; 
+        width: 160px;
+        font-size: 15px;
+        font-family: fontawesome;
+        border-radius: 50px;
+        background-color: white;
+        color: MediumBlue;
+        text-align: center; 
+    }
+      
+    .input5 {
+  
+        height: 70px; 
+        width: 200px;
+        border-radius: 50px;
+        background-color: MediumBlue;
+        font-size: 20px;
+        color: white;
+        border: none;
+        text-align: center;
+        
+    }
+      
+    .input9 {
+  
+        height: 55px; 
+        width: 650px;
+        border-radius: 50px;
+        background-color: MediumBlue;
+        font-size: 25px;
+        color: white;
+        border: none;
+        text-align: center;
+        
+    }
+    
+    .btn {
+  
+        color: red;
+        float: right;
+        width: 700px;
+        height: 45px;
+        border-radius: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        position: fixed;  
+        z-index: 100;
+    }
+    
+    .st {
+  
+        margin-top: -5px;
+        color: black;
+        width: 60px;
+        height: 10px;
+        
+        
+    }
+    
+    .bg-gradient {
+    
+        
+        background-image: linear-gradient(gray,golden rod);
+        width: 101%;
+        height: 500px;
+        position: absolute;
+        z-index: -100;
+  
+    }
+      
+    .footer {
+    
+        background: yellow;
+        color: MediumBlue;
+        top: 2600px;
+        height: 600px;
+        width: 100%;
+        margin-left: -10px;
+        position: absolute;
+        z-index: -100;
+        
+    }
+    
+    .col {
+    
+        width: 16%;
+        height: 100%;
+        float: left;
+      
+    }
+    
+    #a {
+  
+        color: white;
+        text-decoration: none;
+    }
+      
+    .img {
+  
+        width: 230px;
+        height: 195px;
+        margin-top: -130px;
+        border: 4px solid purple;
+        border-radius: 20%;
+    
+  }
+    
+    .f1 {
+  
+      color: grey;
+      margin-top: 15px;
+      margin-left: -520px;
+      font-size: 20px;
+  
+    
+    }
+    
+    .siz {
+  
+      margin-top: 3100px;
+      margin-left: 26%;
+      width: 800px;
+      height: 120px;
+    
+    }
+    
+    .si {
+  
+      margin-left: 37%;
+      width: 600px;
+      height: 100px;
+    
+    }
+      
+  </style>
+  </head>
+  <body>
+    <section class="sec"><br><br><br><br><br><br><br><br><br><br><br><br>
+      <p align="center"><font size="10" style="color: black;">Personalised Learning</font></p><br>
+      
+        
+    </section>
+    <nav>
+    <ul>
+      <p>
+        <div class="mydiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font size="6"><a class="st" href="#"><i class='fas fa-align-left'></i></a></font>&nbsp;&nbsp;
+        <a href="#"><img src="Logo.webp" class="im" width="42" height="40" style="margin-left: 1px; margin-top:20px;"></a>
+       <font size="8" style="color: purple; margin-top: 10px; position: fixed; font-family: monospace, san-serif;"><u><marquee> E-SCHOOL</br><font size="2" style="color:blue">by youth india foundation</marquee></u></font>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+        <font size="5" style="color: purple; margin-top: 5px; font-family: san-serif;">LOGIN</a></font>
+      <font size="5"><a href="/login" class="fas fa-caret-down dropdown"></a></font>&nbsp;<font size="5" style="color: gray">|</font>
+      
+        <font size="5" style="color: purple; margin-top: 5px; font-family: san-serif;">SIGN UP</font>
+        <font size="5"><a href="/register" class="fas fa-caret-down"></a></font>&nbsp;<font size="5" style="color: gray">|</font>
+  
+          </div>
+      </p>
+      
+    
+    </nav>
+    
+    
+    </section>
+    
+    
+    <div class="search-box">
+      
+    <p align="center" class="siz"><font size="7" style="color: 4px solid black;">Comprehensive learning programs for school students aged 4-18 years</font></p>
+    <p align="center" class="si"><font size="5" style="color: 4px solid black;">Become lifelong lessons with India's best teachers, engaging video lessons and personalized learning journey</font></p><br><br><br>
+    
+    </div>
+    
+    <div class="search-box">  
+    <p align="center" class="input4"><img src="n4.jpeg" class="img"><br><br>
+    
+        <font size="7">Dousol <br>Classes</font><br><br><br>
+      <font size="6">Personalised online tutoring program</font><br><br><br><br>
+    
+      <a href="%"><input class="input5" type="submit" name="box" value="Book a Free Class"></a><br><br>   <a href="!"><font size="4" style="color: black;"><u>Know more</u></font></a><br>
+    </p>
+    <p align="center" class="input6"><font size="6" style="color: white;"><a href="^" id="a">Classes 4-12</a></font></p>
+    
+    </div>  
+    
+    <div class="search-box">  
+    <p align="center" class="input10"><img src="n5.jpeg" class="img"><br><br>
+    
+        <font size="7">Dousol Classes<br><font size="6">The Learning App</font></font><br><br><br>
+      <font size="6">Personalised learning app to learn anytime anywhere</font><br><br><br><br>
+    
+      <a href="%"><input class="input5" type="submit" name="box" value="Download Now!"></a><br><br>
+      <a href="!"><font size="4" style="color: black;"><u>Know more</u></font></a><br>
+    </p>
+    <p align="center" class="input11"><font size="6" style="color: white;"><a href="^" id="a">Classes 4-12</a></font></p>
+    
+    </div>  
+    
+    </div>  
+    
+    <div class="search-box">  
+    <p align="center" class="input12"><img src="n2.jpeg" class="img"><br><br>
+    
+        <font size="7">Easy Learn</font><br><br><br><br><br>
+      <font size="6">A specially crafted early learning program for young minds</font><br><br><br>
+    
+      <a href="%"><input class="input5" type="submit" name="box" value="Book a Free Class"></a><br><br>
+      <a href="!"><font size="4" style="color: black;"><u>Know more</u></font></a><br>
+    </p>
+    <p align="center" class="input13"><font size="6" style="color: white;"><a href="^" id="a">Classes LKG - 3</a></font></p>
+    
+    
+    </div>  
+    <div>
+    <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+  </form>
+  </div>
+        
+  
+    
+    
+    
+    
+      <footer>
+      <div class="footer">
+        
+          <div class="col">
+            <br>
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COURSES</h4>
+              <ul style="list-style-type: none;">
+                <li><a href="#" id="a" style="color: black;">CBSE</a></li><br>
+                <li><a href="#" id="a" style="color: black;">ICSE</a></li><br>
+                <li><a href="#" id="a" style="color: black;">CAT</a></li><br>
+                <li><a href="#" id="a" style="color: black;">IAS</a></li><br>
+                <li><a href="#" id="a" style="color: black;">JEE</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NEET</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Commerce</a></li><br>
+                <li><a href="#" id="a" style="color: black;">JEE Main</a></li><br>
+                <li><a href="#" id="a" style="color: black;">JEE Advanced</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NCERT</a></li><br>
+                <li><a href="#" id="a" style="color: black;">CBSE Sample Papers</a></li><br>
+                <li><a href="#" id="a" style="color: black;">CBSE Question Papers</a></li><br>
+              </ul>
+          </div>
+          
+          <div class="col"><br>
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXAMS</h4>
+              <ul style="list-style-type: none;">
+                <li><a href="#" id="a" style="color: black;">CAT Exam</a></li><br>
+                <li><a href="#" id="a" style="color: black;">IAS Exam</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Bank Exam</a></li><br>
+                <li><a href="#" id="a" style="color: black;">UPSC Syllabus</a></li><br>
+                <li><a href="#" id="a" style="color: black;">UPSC 2020</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Government Exams</a></li><br>
+              </ul>
+  
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASSES</h4>
+              <ul style="list-style-type: none;">
+              
+            <li><a href="#" id="a" style="color: black;">Class 1<sup>st</sup> - 3<sup>rd</sup></a></li><br>
+            <li><a href="#" id="a" style="color: black;">Class 4<sup>th</sup> - 5<sup>th</sup></a></li><br>
+            <li><a href="#" id="a" style="color: black;">Class 6<sup>th</sup> - 10<sup>th</sup></a></li><br>
+            <li><a href="#" id="a" style="color: black;">Class 11<sup>th</sup> - 12<sup>th</sup></a></li><br>
+  
+              </ul>
+          </div>
+                
+          <div class="col"><br> 
+      
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXAM                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREPARATION</h4>
+              <ul style="list-style-type: none;">
+                <li><a href="#" id="a" style="color: black;">Free CAT Prep</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Free IAS Prep</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Maths</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Physics</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Chemistry</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Biology</a></li><br>
+              </ul>
+          
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RESOURCES</h4>
+              <ul style="list-style-type: none;">
+                <li><a href="#" id="a" style="color: black;">Blog</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Videos</a></li><br>
+                <li><a href="#" id="a" style="color: black;">All Products</a></li><br>
+                <li><a href="#" id="a" style="color: black;">DSSL</a></li><br>              
+              </ul>
+        
+          </div>
+      
+          
+          
+          <div class="col"><br> 
+      
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMPANY</h4>
+              <ul style="list-style-type: none;">
+    
+              <li><a href="#" id="a" style="color: black;">About Us</a></li><br>
+              <li><a href="#" id="a" style="color: black;">Contact Us</a></li><br>
+              <li><a href="#" id="a" style="color: black;">Investors</a></li><br>
+              <li><a href="#" id="a" style="color: black;">Careers</a></li><br>
+              <li><a href="#" id="a" style="color: black;">Dousol In Media</a></li><br>
+              <li><a href="#" id="a" style="color: black;">Students' Stories – The Learning Tree</a></li><br>
+              <li><a href="#" id="a" style="color: black;">Faces of Dousol – Life at Dousol</a></li><br>
+              <li><a href="#" id="a" style="color: black;">Social Initiative - Education for All</a></li><br>               
+              </ul>
+        
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOLLOW US</h4>
+              
+                <a href="#" id="a">
+  
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <font size="5"><a><i class="fab fa-facebook"></i></a></font>
+  
+                </a>
+                <a href="#" id="a">
+  
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <font size="5"><a><i class="fab fa-linkedin"></i></a></font>
+  
+                </a>
+            
+          </div>
+        
+          <div class="col"><br>
+  
+                <a href="/textbook-solutions/" id="a">
+  
+              <a><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FREE TEXTBOOK
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOLUTIONS</h4></a>
+  
+                </a>
+              <ul style="list-style-type: none;">
+                <li><a href="#" id="a" style="color: black;">NCERT Solutions For Class 6</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NCERT Solutions For Class 7</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NCERT Solutions For Class 8</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NCERT Solutions For Class 9</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NCERT Solutions For Class 10</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NCERT Solutions For Class 11</a></li><br>
+                <li><a href="#" id="a" style="color: black;">NCERT Solutions For Class 12</a></li><br>
+                <li><a href="#" id="a" style="color: black;">RS Aggarwal Solutions</a></li><br>
+                <li><a href="#" id="a" style="color: black;">RD Sharma Solutions</a></li><br>
+              </ul>
+            
+          
+  
+          </div>  
+      
+          
+          <div class="col"><br>
+                
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State Boards</h4>
+              <ul style="list-style-type: none;">
+                <li><a href="#" id="a" style="color: black;">Maharashtra</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Gujarat</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Tamil Nadu</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Karnataka</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Kerala</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Andhra Pradesh</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Telangana</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Uttar Pradesh</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Bihar</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Rajasthan</a></li><br>
+                <li><a href="#" id="a" style="color: black;">Madhya Pradesh</a></li><br>
+              </ul>
+      
+          </div>
+      
+      
+          <div align="center" style="background-color: yellow;"><font size="4"><br><br><br><br><br><br>
+          ©&nbsp;2020, Dousol. All rights reserved.<br><br<br><br><br></font></div> 
+      </div>
+      </footer>
+  
+    
+         
+  </body>
+  </html>
+
+
