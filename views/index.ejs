@@ -398,13 +398,21 @@
         <a href="#"><img src="Logo.webp" class="im" width="42" height="40" style="margin-left: 1px; margin-top:20px;"></a>
        <font size="8" style="color: purple; margin-top: 10px; position: fixed; font-family: monospace, san-serif;"><u><marquee> E-SCHOOL</br><font size="2" style="color:blue">by youth india foundation</marquee></u></font>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  
-        <font size="5" style="color: purple; margin-top: 5px; font-family: san-serif;">LOGIN</a></font>
-      <font size="5"><a href="/login" class="fas fa-caret-down dropdown"></a></font>&nbsp;<font size="5" style="color: gray">|</font>
-      
-        <font size="5" style="color: purple; margin-top: 5px; font-family: san-serif;">SIGN UP</font>
-        <font size="5"><a href="/register" class="fas fa-caret-down"></a></font>&nbsp;<font size="5" style="color: gray">|</font>
-  
+    
+
+        <% if(data != '') { %> 
+
+            <font size="5" style="color: purple; margin-top: 5px; font-family: san-serif;"><%= data.name %></a></font>
+
+        <% } else {%>
+            <font size="5" style="color: purple; margin-top: 5px; font-family: san-serif;">LOGIN</a></font>
+            <font size="5"><a href="/login" class="fas fa-caret-down dropdown"></a></font>&nbsp;<font size="5" style="color: gray">|</font>
+            
+            <font size="5" style="color: purple; margin-top: 5px; font-family: san-serif;">SIGN UP</font>
+            <font size="5"><a href="/register" class="fas fa-caret-down"></a></font>&nbsp;<font size="5" style="color: gray">|</font>
+
+        <% } %>
+
           </div>
       </p>
       

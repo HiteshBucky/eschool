@@ -35,7 +35,7 @@ module.exports = {
                 })
             } 
 
-           res.json({result})
+           res.render('index', {data : result})
         })
             
         // userModel.find({$and: [{email: "hk824778@gmail.com"},{password: '12'}]}, (err, user) => {
