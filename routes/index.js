@@ -5,7 +5,7 @@ var userModel = require('../Models/User')
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('index', { title: 'Express', data : '' });
 });
 
